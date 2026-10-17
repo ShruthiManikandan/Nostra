@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collections | NOSTRA</title>
+  <meta name="description" content="Browse the full NOSTRA collection for men, women, accessories and footwear." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP ANNOUNCEMENT BAR ===== -->
+  <div class="announce">
+    Sign Up and <strong>GET 20% OFF</strong> for your first Order
+  </div>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">NOSTRA</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="index.html#new-arrival">New Arrival</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="collections.html" class="active">Collections</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="collections.html" class="icon-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.6-9.5-9.2C.9 8.6 2.5 5 6 5c2 0 3.4 1.1 4 2.2h4C14.6 6.1 16 5 18 5c3.5 0 5.1 3.6 3.5 6.8C19 16.4 12 21 12 21z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </a>
+        <a href="collections.html" class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PAGE TITLE ===== -->
+    <section class="page-banner">
+      <h1>The Collection</h1>
+      <p>Find your next favourite piece.</p>
+    </section>
+
+    <section class="container section">
+
+      <!-- ===== SEARCH + CATEGORY FILTERS ===== -->
+      <div class="toolbar">
+        <input type="search" id="searchInput" class="search-input" placeholder="Search products..." aria-label="Search products" />
+
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="Men">Men</button>
+          <button class="filter-btn" data-category="Women">Women</button>
+          <button class="filter-btn" data-category="Accessories">Accessories</button>
+          <button class="filter-btn" data-category="Footwear">Footwear</button>
+        </div>
+      </div>
+
+      <div class="collections-layout">
+
+        <!-- ===== SIDEBAR FILTERS (Occasion / Colors / Arrivals) ===== -->
+        <aside class="sidebar" aria-label="Filters">
+          <div class="side-group">
+            <h3>Occasion</h3>
+            <label><input type="checkbox" data-group="occasion" value="Summer" /> Summer</label>
+            <label><input type="checkbox" data-group="occasion" value="Party" /> Party</label>
+            <label><input type="checkbox" data-group="occasion" value="Beach" /> Beach</label>
+          </div>
+
+          <div class="side-group">
+            <h3>Colors</h3>
+            <label><input type="checkbox" data-group="color" value="Red" /> Red</label>
+            <label><input type="checkbox" data-group="color" value="Blue" /> Blue</label>
+            <label><input type="checkbox" data-group="color" value="White" /> White</label>
+            <label><input type="checkbox" data-group="color" value="Green" /> Green</label>
+            <label><input type="checkbox" data-group="color" value="Black" /> Black</label>
+          </div>
+
+          <div class="side-group">
+            <h3>Arrivals</h3>
+            <label><input type="checkbox" data-group="arrival" value="New" /> New</label>
+            <label><input type="checkbox" data-group="arrival" value="Old" /> Old</label>
+          </div>
+
+          <button type="button" class="btn btn-dark btn-small" id="clearFilters">Clear Filters</button>
+        </aside>
+
+        <!-- ===== PRODUCTS ===== -->
+        <div class="collections-main">
+          <p class="result-count" id="resultCount"></p>
+
+          <!-- Products are rendered here by script.js -->
+          <div class="product-grid grid-3" id="productGrid"></div>
+
+          <!-- Shown when nothing matches -->
+          <div class="no-results" id="noResults" hidden>
+            <h3>No products found</h3>
+            <p>Try a different search word or clear some filters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newsletter to get exclusive discounts, updates, and more.</p>
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Email address" />
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </form>
+        <p class="form-message" id="newsletterMessage" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">NOSTRA</a>
+        <p class="footer-text">Minimal, modern fashion designed to last beyond the season.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collections.html?category=Men">Men</a></li>
+          <li><a href="collections.html?category=Women">Women</a></li>
+          <li><a href="collections.html?category=Accessories">Accessories</a></li>
+          <li><a href="collections.html?category=Footwear">Footwear</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#new-arrival">New Arrival</a></li>
+          <li><a href="index.html#most-wanted">Most Wanted</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>support@nostra.com</li>
+          <li>+91 98765 43210</li>
+          <li>Mon - Sat, 10am - 7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Nostra.com. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

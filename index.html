@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOSTRA | Level up your style</title>
+  <meta name="description" content="NOSTRA - modern fashion for men and women. Shop new arrivals and most wanted styles." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP ANNOUNCEMENT BAR ===== -->
+<div class="announce" id="announceBar">
+  <p>Sign Up and <strong>GET 20% OFF</strong> for your first Order</p>
+  <button class="announce-close" id="announceClose" type="button" aria-label="Close announcement">&times;</button>
+</div>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">NOSTRA</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="index.html#new-arrival">New Arrival</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="nav-icons">
+        <!-- Wishlist -->
+        <a href="collections.html" class="icon-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.6-9.5-9.2C.9 8.6 2.5 5 6 5c2 0 3.4 1.1 4 2.2h4C14.6 6.1 16 5 18 5c3.5 0 5.1 3.6 3.5 6.8C19 16.4 12 21 12 21z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </a>
+        <!-- Cart -->
+        <a href="collections.html" class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </a>
+        <!-- Hamburger (mobile only) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="slider" id="slider" aria-label="Featured collections">
+      <div class="slides" id="slides">
+        <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1800&q=75')">
+          <div class="slide-content">
+            <h1>Level up your style with our</h1>
+            <h4>Summer Collections</h4>
+            <a href="collections.html" class="btn btn-light">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=75')">
+          <div class="slide-content">
+            <h1>Effortless looks for every</h1>
+            <h4>Occasion</h4>
+            <a href="collections.html" class="btn btn-light">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1800&q=75')">
+          <div class="slide-content">
+            <h1>Fresh styles landing</h1>
+            <h4>Every Single Day</h4>
+            <a href="index.html#new-arrival" class="btn btn-light">Explore New</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+      <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- ===== BRANDS ===== -->
+    <section class="container brands">
+      <h2 class="section-title">Brands</h2>
+      <div class="brand-row">
+        <div class="brand"><span class="brand-mark">P</span>Puma</div>
+        <div class="brand"><span class="brand-mark">A</span>Adidas</div>
+        <div class="brand"><span class="brand-mark">S</span>Simple</div>
+        <div class="brand"><span class="brand-mark">L</span>Leaves</div>
+        <div class="brand"><span class="brand-mark">B</span>Behance</div>
+        <div class="brand"><span class="brand-mark">T</span>Twitch</div>
+      </div>
+    </section>
+
+    <!-- ===== CUSTOMER EXPERIENCE ===== -->
+    <section class="experience">
+      <div class="container">
+        <div class="experience-head">
+          <h2>We Provide Best<br />Customer Experiences</h2>
+          <p>We ensure that our customers have the best shopping experience.</p>
+        </div>
+        <div class="experience-grid">
+          <div class="exp-card">
+            <span class="exp-icon">&#10003;</span>
+            <h4>Original Products</h4>
+            <p>Every item is sourced from trusted makers and checked for authenticity.</p>
+          </div>
+          <div class="exp-card">
+            <span class="exp-icon">&#9733;</span>
+            <h4>Satisfaction Guarantee</h4>
+            <p>Not happy with your order? Easy 14-day returns, no questions asked.</p>
+          </div>
+          <div class="exp-card">
+            <span class="exp-icon">&#10022;</span>
+            <h4>New Arrival Everyday</h4>
+            <p>Fresh styles are added to the store daily so you never run out of options.</p>
+          </div>
+          <div class="exp-card">
+            <span class="exp-icon">&#10140;</span>
+            <h4>Fast &amp; Free Shipping</h4>
+            <p>Free delivery across India on orders above ₹2,999.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEW ARRIVALS (filled by script.js) ===== -->
+    <section class="container section anchor" id="new-arrival">
+      <h2 class="section-title">New Arrivals</h2>
+      <div class="arrival-grid" id="newArrivals"></div>
+    </section>
+
+    <!-- ===== MOST WANTED (filled by script.js) ===== -->
+    <section class="container section anchor" id="most-wanted">
+      <h2 class="section-title">Most Wanted</h2>
+      <div class="product-grid" id="mostWanted"></div>
+      <div class="center"><a href="collections.html" class="btn btn-dark">View All Collections</a></div>
+    </section>
+
+    <!-- ===== LIMITED OFFER ===== -->
+    <section class="offer">
+      <div class="container offer-inner">
+        <div class="offer-image">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=75" alt="Limited offer" />
+        </div>
+        <div class="offer-text">
+          <p class="eyebrow">Limited Offer</p>
+          <h2>35% OFF on this for the first 30 Customers</h2>
+          <div class="countdown" id="countdown" aria-label="Offer ends in">
+            <div><strong id="cdHours">00</strong><span>Hours</span></div>
+            <div><strong id="cdMins">00</strong><span>Mins</span></div>
+            <div><strong id="cdSecs">00</strong><span>Secs</span></div>
+          </div>
+          <a href="collections.html" class="btn btn-dark">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newsletter to get exclusive discounts, updates, and more.</p>
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Email address" />
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </form>
+        <p class="form-message" id="newsletterMessage" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">NOSTRA</a>
+        <p class="footer-text">Minimal, modern fashion designed to last beyond the season.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collections.html?category=Men">Men</a></li>
+          <li><a href="collections.html?category=Women">Women</a></li>
+          <li><a href="collections.html?category=Accessories">Accessories</a></li>
+          <li><a href="collections.html?category=Footwear">Footwear</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#new-arrival">New Arrival</a></li>
+          <li><a href="index.html#most-wanted">Most Wanted</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>support@nostra.com</li>
+          <li>+91 98765 43210</li>
+          <li>Mon - Sat, 10am - 7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Nostra.com. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

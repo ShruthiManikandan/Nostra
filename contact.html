@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | NOSTRA</title>
+  <meta name="description" content="Get in touch with the NOSTRA team." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP ANNOUNCEMENT BAR ===== -->
+  <div class="announce">
+    Sign Up and <strong>GET 20% OFF</strong> for your first Order
+  </div>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">NOSTRA</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="index.html#new-arrival">New Arrival</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="collections.html" class="icon-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.6-9.5-9.2C.9 8.6 2.5 5 6 5c2 0 3.4 1.1 4 2.2h4C14.6 6.1 16 5 18 5c3.5 0 5.1 3.6 3.5 6.8C19 16.4 12 21 12 21z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </a>
+        <a href="collections.html" class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Contact Us</h1>
+      <p>Questions about an order or a product? We're happy to help.</p>
+    </section>
+
+    <section class="container section contact-layout">
+
+      <!-- ===== CONTACT DETAILS ===== -->
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <div class="info-item">
+          <h4>Address</h4>
+          <p>NOSTRA Studio, 12 Fashion Street,<br />Coimbatore, Tamil Nadu 641001</p>
+        </div>
+        <div class="info-item">
+          <h4>Email</h4>
+          <p>support@nostra.com</p>
+        </div>
+        <div class="info-item">
+          <h4>Phone</h4>
+          <p>+91 98765 43210</p>
+        </div>
+        <div class="info-item">
+          <h4>Working Hours</h4>
+          <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+        </div>
+      </div>
+
+      <!-- ===== CONTACT FORM ===== -->
+      <form id="contactForm" class="contact-form" novalidate>
+        <h2>Send us a message</h2>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" />
+          <span class="error" id="phoneError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help you?"></textarea>
+          <span class="error" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Send Message</button>
+        <p class="form-message" id="formSuccess" role="status"></p>
+      </form>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newsletter to get exclusive discounts, updates, and more.</p>
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Email address" />
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </form>
+        <p class="form-message" id="newsletterMessage" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">NOSTRA</a>
+        <p class="footer-text">Minimal, modern fashion designed to last beyond the season.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collections.html?category=Men">Men</a></li>
+          <li><a href="collections.html?category=Women">Women</a></li>
+          <li><a href="collections.html?category=Accessories">Accessories</a></li>
+          <li><a href="collections.html?category=Footwear">Footwear</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#new-arrival">New Arrival</a></li>
+          <li><a href="index.html#most-wanted">Most Wanted</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>support@nostra.com</li>
+          <li>+91 98765 43210</li>
+          <li>Mon - Sat, 10am - 7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Nostra.com. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
